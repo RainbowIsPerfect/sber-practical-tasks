@@ -3,9 +3,9 @@
 Выведите этот объект в консоль. */
 
 
-let name = "Анатолий";
-let last_name = "Максимов";
-let age = 32;
+//let name = "Анатолий";
+//let last_name = "Максимов";
+//let age = 32;
 
 let obj = {
     name,
