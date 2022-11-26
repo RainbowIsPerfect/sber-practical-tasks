@@ -2,11 +2,15 @@
 Используя цикл, возведите значение переменной в квадрат три раза. 
 Каждый результат конкатенируйте через пробел и выведите в консоль. */
 
-//let num = 2;
-let result = '';
+let num = 2;
 
-for (let index = 0; index < 3; index++) {
-    num = num**2;
-    result = result + " " + num ;
+function getSquares(number) {
+    let str = '';
+    for (let i = 0; i < 3; i++) {
+        number *= number;
+        str += number + ' '; 
+    }
+    return str.trim();
 }
-console.log(result.trim());
+
+console.log(getSquares(num));
