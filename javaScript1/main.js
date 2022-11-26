@@ -1,6 +1,6 @@
-let price = 80;
+let value = 4;
+let total = 80;
 
-function priceMessage() {
-    console.log(`Данный товар стоит ${price} рублей`);
+function getPercent(value, total) {
+    
 }
-priceMessage();
