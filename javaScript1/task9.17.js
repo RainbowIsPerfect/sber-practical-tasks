@@ -20,6 +20,5 @@ let list = Object.values(obj);
 
 for (const item of list) {
     countItems[item] = countItems[item] ? countItems[item] + 1 : 1;
-    
 }
 console.log(countItems);

@@ -6,11 +6,10 @@
 let sentence = "Завтра будет лучше чем вчера";
 
 let sentenceModified = sentence + ' ';
-let sentenceLenght = sentence.length + 1;
 let array = [];
 let arrayIndex = 0;
 let word = '';
-for (let i = 0; i <= sentenceLenght; i++) {
+for (let i = 0; i <= sentence.length; i++) {
     if (sentenceModified.charAt(i) == ' ') {
         array[arrayIndex] = word;
         arrayIndex++;

@@ -9,7 +9,7 @@ let result = 0;
 let result2 = 0;
 
 for (let i = list.length - 1; i >= 0; i--) {
-    result = result + list[i];
+    result += list[i];
 }
 
 console.log(result);
@@ -17,7 +17,7 @@ console.log(result);
 // 2 Вариант
 
 for (let value of list) {
-    result2 = result2 + value
+    result2 += value
 }
 
 console.log(result2);

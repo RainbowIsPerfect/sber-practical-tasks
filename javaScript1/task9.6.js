@@ -5,8 +5,8 @@
 // Заполняем массив
 let list = [];
 
-let startValue = 5;
-let endValue = 10;
+let startValue = 1;
+let endValue = 100;
 
 for (let index = 0; index < endValue; index++) {
     list.push(startValue);
