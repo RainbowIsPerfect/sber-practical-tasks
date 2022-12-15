@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6.6</title>
+</head>
+
+<body>
+<!-- В программе задана переменная ctx, которая содержит контекст canvas элемента. 
+Напишите программу, которая отрисовывает круги при движении мышью по canvas (для получения координат мыши используйте offsetX и offsetY). 
+Для решения задачи воспользуйтесь методом addEventListener у объекта document.
+
+Для правильной валидации задания выполните проверку в следующем порядке:
+
+Выполните задание
+Нажмите на кнопку «Проверить»
+Проведите курсором по окну с результатом
+Нажмите на кнопку «Проверить» еще раз  -->
+
+    <canvas id="root" width="600" height="600" style="border: 1px solid black;"></canvas>
+    <script>
+        const canvas = document.querySelector('#root');
+        let ctx = canvas.getContext('2d');
+        document.addEventListener('mousemove', event => {
+            let x = event.offsetX;
+            let y = event.offsetY;
+            ctx.beginPath();
+            ctx.arc(x, y, 20, 0, 2 * Math.PI);
+            ctx.stroke();
+        })
+    </script>
+</body>
+
+</html>
