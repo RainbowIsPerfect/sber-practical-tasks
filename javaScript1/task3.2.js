@@ -2,8 +2,7 @@
 Посчитайте общую длину имени и фамилии и выведите ее в консоль. 
 Обратите внимание: в имени и фамилии по бокам могут быть пробельные символы — их считать не надо */
 
-//let name = "Всеволод";
-//let last_name = "\nСтарозубов";
+let name = "Всеволод";
+let last_name = "\nСтарозубов";
 
-let result = name.trim() + last_name.trim();
-console.log(result.length);
+console.log(name.trim().concat(last_name.trim()).length);
