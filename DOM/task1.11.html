@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="card">
+        <div class="content">
+            <p>Удачи в решении задачи!</p>
+            <ul class="cars">
+                <li>Audi</li>
+                <li>BMW</li>
+                <li>Hyundai</li>
+            </ul>
+            <ul>
+                <li>Mazda</li>
+                <li>Peugeot</li>
+                <li>Toyota</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // В HTML-документе задан тег <ul> c классом cars. Внутри этого тега есть несколько тегов <li>. 
+        // Реализуйте скрипт, который считывает содержимое этих элементов <li>, формирует из них массив и сохраняет в переменной cars.
+        const listItems = Array.from(document.querySelector('.cars').children);
+        let resultArray = [];
+        listItems.forEach(li => resultArray.push(li.textContent))
+        console.log(resultArray);
+    </script>
+</body>
+
+</html>
