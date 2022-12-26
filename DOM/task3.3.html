@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <label>Укажите свое имя: </label>
+        <p><input id="target"></p>
+    </section>
+    <script>
+        // В HTML-документе есть тег <label> и тег <input> с идентификатором target. 
+        // Необходимо написать скрипт, который присваивает тегу <label> атрибут, позволяющий привязать его к тегу <input>. 
+        // В результате при клике мышью на <label> тег <input> должен стать активным (в него должен переместиться курсор).
+        const label = document.querySelector('label');
+        label.setAttribute('for', 'target');
+    </script>
+</body>
+
+</html>

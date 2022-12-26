@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <select id="numbers">
+        </select>
+    </section>
+    <script>
+        // В HTML-документе задан тег <select> c идентификатором numbers. 
+        // Напишите скрипт, который добавит внутрь этого тега несколько тегов <option> со значениями от 10 до 550 с шагом 10. 
+        // Значение у тега <option> должно быть указано внутри и в атрибуте value.
+        const select = document.querySelector('#numbers');
+        for (let i = 10; i <= 550; i += 10) {
+            const option = document.createElement('option');
+            option.textContent = i;
+            option.setAttribute('value', i);
+            select.append(option);
+        }
+    </script>
+</body>
+
+</html>

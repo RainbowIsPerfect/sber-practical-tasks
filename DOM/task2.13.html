@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <ul id="tasks">
+            <li>Велосипед</li>
+            <li>Скейт</li>
+            <li>Самокат</li>
+        </ul>
+    </section>
+    <script>
+        // В HTML-документе есть тег <ul> с идентификатором tasks, и внутри него есть несколько тегов <li> с текстом. 
+        // Напишите скрипт, который позволяет отсортировать элементы <li> в теге <ul> по длине содержимого.
+        const list = document.querySelector('#tasks');
+        const elements = Array.from(list.children);
+        elements.sort((a,b) => a.textContent.length - b.textContent.length);
+        elements.forEach(e => list.append(e));
+    </script>
+</body>
+
+</html>

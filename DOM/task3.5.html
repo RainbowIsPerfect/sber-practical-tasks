@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <div id="photo">https://i.pinimg.com/564x/36/a1/91/36a19108f3088af7315231dc919b166a.jpg</div>
+    </section>
+    <script>
+        // В HTML-документе есть тег <div> с идентификатором photo. Внутри этого тега указана ссылка на картинку. Необходимо написать скрипт, который:
+        //     заменит ссылку на тег <img> с этой картинкой  
+        //     укажет размеры картинки в атрибуте style 100 на 100 пикселей
+        const div = document.querySelector('#photo');
+        const link = div.textContent;
+        const image = document.createElement('img');
+        image.setAttribute('src', link);
+        image.style.width = '100px';
+        image.style.height = '100px';
+        div.appendChild(image);
+        image.previousSibling.remove();
+    </script>
+</body>
+
+</html>

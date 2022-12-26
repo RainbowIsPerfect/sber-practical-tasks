@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <div id="div1">
+            <p>велосипед</p>
+            <p>лыжи</p>
+            <p>скейт</p>
+        </div>
+        <div id="div2"></div>
+    </section>
+    <script>
+        // В скрипте объявлена переменная values, которая содержит массив из строк. В HTML-верстке есть два тега <div> с классами div1 и div2. 
+        // Допишите скрипт так, чтобы все теги <p> из тега с идентификатором div1, значение которого встречается в списке values, переместились в тег с идентификатором div2.
+        const values = ["велосипед", "ролики", "лыжи"];
+        const divOne = Array.from(document.querySelector('#div1').children);
+        const divTwo = document.querySelector('#div2');
+        divOne.forEach(e => {
+            if (values.includes(e.textContent)) {
+                divTwo.append(e)
+            }
+        });
+    </script>
+</body>
+
+</html>

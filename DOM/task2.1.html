@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="card">
+        <div class="content">
+            <p>Удачи в решении задачи!</p>
+            <div id='root'></div>
+        </div>
+    </div>
+    <script>
+        // Напишите скрипт, который создает новый элемент <p> в переменной new_element и добавляет его в тег с идентификатором root. 
+        // Созданный тег <p> должен содержать в себе фразу Ура! Мой скрипт отработал верно!
+        const root = document.querySelector('#root');
+        let new_element = document.createElement('p');
+        new_element.textContent = 'Ура! Мой скрипт отработал верно!';
+        root.append(new_element);
+    </script>
+</body>
+
+</html>

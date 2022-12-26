@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <div id="root"></div>
+    </section>
+    <script>
+        // В скрипте объявлена переменная task, в которой хранится список из строк. В HTML-верстке есть тег <div> с идентификатором root. 
+        // Допишите скрипт так, чтобы на основе значений списка сформировались теги <p> и добавились в элемент с идентификатором root.
+        const tasks = ["Проверить документы", "Отправить начальству", "Организовать собрание"];
+        const root = document.querySelector('#root');
+        tasks.forEach(e => {
+            const newElement = document.createElement('p');
+            newElement.textContent = e;
+            root.append(newElement);
+        })
+    </script>
+</body>
+
+</html>

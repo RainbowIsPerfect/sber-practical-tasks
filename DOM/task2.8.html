@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <div id="div1">
+            <p>свободно и трутни</p>
+            <p>улей покинуть вольны.</p>
+        </div>
+        <div id="div2">
+            <p>Рабочие пчёлы летают</p>
+        </div>
+    </section>
+    <script>
+        // В HTML-документе заданы два <div> тега с идентификаторами div1 и div2. 
+        // Напишите скрипт, который позволит перенести содержимое тега с идентификатором div1 в конец тега с идентификатором div2.
+        const divOne = Array.from(document.querySelector('#div1').children);
+        const divTwo = document.querySelector('#div2');
+        divOne.forEach(e => {
+            divTwo.append(e);
+        });
+    </script>
+</body>
+
+</html>

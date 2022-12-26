@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="card">
+        <div class="content">
+            <p>Удачи в решении задачи!</p>
+            <ul>
+                <li>Ролики</li>
+                <li>Лыжи</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // В HTML-документе задан тег <ul> c элементами <li> внутри. 
+        // Напишите скрипт, который создает новый элемент <li> с текстовым содержимым Велосипед в переменной new_element и добавляет его в начало списка <ul>.
+        const list = document.querySelector('ul');
+        const listItem = document.querySelector('li')
+        let new_element = document.createElement('li');
+        new_element.textContent = 'Велосипед';
+        list.insertBefore(new_element, listItem);
+    </script>
+</body>
+
+</html>

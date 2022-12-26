@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <p id="rainbow">50</p>
+    </section>
+    <script>
+        // В HTML-документе есть тег <p> c идентификатором rainbow. Внутри этого тега указано число. 
+        // Реализуйте скрипт, который делает преобразование в зависимости от следующих условий:
+        //     Если числовое значение находится в диапазоне от 1 до 9 включительно, должно меняться значение атрибута style. Цвет текста — на красный (#c0392b).
+        //     Если числовое значение находится в диапазоне от 10 до 20 включительно — на коричневый (#e17055).
+        //     В ином случае — на желтый (#fdcb6e).
+        const paragraph = document.querySelector('#rainbow');
+        const value = +paragraph.textContent;
+        if (value >= 1 && value <= 9) {
+            paragraph.style.color = '#c0392b';
+        } else if (value >= 10 && value <= 20) {
+            paragraph.style.color = '#e17055';
+        } else {
+            paragraph.style.color = '#fdcb6e'; 
+        }
+    </script>
+</body>
+
+</html>

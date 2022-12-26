@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <p>Удачи в решении задачи!</p>
+        <p>Только усердная работа может привести к результату.</p>
+        <span>Занимайтесь понемногу, но каждый день.</span>
+    </section>
+    <script>
+        // В HTML-документе есть несколько тегов <p>. 
+        // Напишите скрипт, который присваивает каждому тегу идентификатор — от значения p_1 и до p_<n>. Тут n — количество параграфов.
+        const paragraphElements = document.querySelectorAll('p');
+        let counter = 1;
+        paragraphElements.forEach(e => {
+            e.id = `p_${counter}`;
+            counter++;
+        });
+    </script>
+</body>
+
+</html>

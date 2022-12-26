@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <p>Удачи в решении задачи!</p>
+        <p>Delete</p>
+        <span>Занимайтесь понемногу, но каждый день.</span>
+    </section>
+    <p>Delete</p>
+    <script>
+        // В HTML-документе заданы теги <p>. Напишите скрипт, который удаляет теги, внутри которых хранится текстовое значение Delete.
+        const paragraphElements = document.querySelectorAll('p');
+        paragraphElements.forEach(e => {
+            if (e.textContent === 'Delete') e.remove();
+        });
+    </script>
+</body>
+
+</html>

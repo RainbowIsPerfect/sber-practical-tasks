@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <h2>Без заголовка было бы не так интересно.</h2>
+        <div id="root">
+            <p>Удачи в решении задачи!</p>
+            <p>Главное - упорство!</p>
+        </div>
+        <div id="footer">
+            <p>У вас получится.</p>
+        </div>
+    </section>
+    <script>
+        // Напишите программу, которая считает количество <div>-, <p>- и <h2>-тегов и записывает его в объект tags, как в примере. Выведите сформированный объект в консоль.
+        const elements = document.querySelectorAll('p, h2, div');
+        const tags = {
+            "div": 0,
+            "p": 0,
+            "h2": 0
+        };
+        elements.forEach(e => {
+            tags[e.tagName.toLowerCase()] += 1;
+        });
+        console.log(tags);
+    </script>
+</body>
+
+</html>
