@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <input value="Все работает!" id="val">
+        <button id="btn">Жмак!</button>
+    </section>
+    <script>
+        // В HTML-документе задан тег <button> с идентификатором btn и тег <input> с идентификатором val. 
+        // Напишите скрипт, который выводит в консоль значение тега <input> при клике на кнопку.
+        const button = document.querySelector('#btn');
+        const input = document.querySelector('#val');
+        button.addEventListener('click', () => console.log(input.value))
+    </script>
+</body>
+
+</html>

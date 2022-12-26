@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <section class="card">
+        <button id="clicker">0</button>
+    </section>
+    <script>
+        // В HTML-документе есть тег <button> с идентификатором clicker. 
+        // Напишите скрипт, который добавит обработку события клика на кнопку с идентификатором clicker. 
+        // При нажатии на кнопку число внутри тега <button> должно увеличиваться на один.
+        const button = document.querySelector('#clicker');
+        button.addEventListener('click', () => button.textContent = +button.textContent + 1);
+    </script>
+</body>
+
+</html>
