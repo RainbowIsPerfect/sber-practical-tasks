@@ -14,10 +14,7 @@
         const button = document.querySelector('.copy');
         button.addEventListener('click', clickFunction);
         function clickFunction() {
-            const newButton = document.createElement('button');
-            const buttonClasses = button.className;
-            newButton.textContent = button.textContent;
-            newButton.className = buttonClasses;
+            const newButton = button.cloneNode(true);
             newButton.addEventListener('click', clickFunction);
             document.body.append(newButton);
         }

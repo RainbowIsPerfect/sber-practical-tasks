@@ -32,8 +32,8 @@
         // Напишите скрипт, который уменьшает ширину и высоту квадрата на 10% при клике по нему.
         const square = document.querySelector('#square');
         square.addEventListener('click', () => {
-            square.style.width = square.offsetWidth - (10 / square.offsetWidth * 100) + 'px';
-            square.style.height = square.offsetHeight - (10 / square.offsetHeight * 100) + 'px';
+            square.style.width = square.offsetWidth - (square.offsetWidth * 10) / 100 + 'px';
+            square.style.height = square.offsetHeight - (square.offsetHeight * 10) / 100 + 'px';
         });
     </script>
 </body>

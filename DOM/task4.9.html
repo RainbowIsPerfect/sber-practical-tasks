@@ -62,28 +62,11 @@
     </section>
     <script>
         // В HTML-документе есть два тега <div> с идентификаторами div1 и div2 с элементами <p> внутри. 
-        // Напишите скрипт, который перемещает тег <p> из одного тега <div> в другой при клике по этому элементу <p>.
-            
+        // Напишите скрипт, который перемещает тег <p> из одного тега <div> в другой при клике по этому элементу <p>.  
         const paragraphs = document.querySelectorAll('p');
         const div1 = document.querySelector('#div1');
         const div2 = document.querySelector('#div2');
-
-        paragraphs.forEach(p => {
-            p.addEventListener('click', createNewParagraph)
-        })
-
-        function createNewParagraph() {
-            const newParagraph = document.createElement('p');
-            newParagraph.textContent = event.target.textContent;
-            newParagraph.addEventListener('click', createNewParagraph)
-            if (event.target.parentElement === div1) {
-                div2.append(newParagraph);
-                event.target.remove();
-            } else {
-                div1.append(newParagraph);
-                event.target.remove();
-            }
-        }
+        paragraphs.forEach(p => p.addEventListener('click', () => p.parentElement === div1 ? div2.append(p) : div1.append(p)));
     </script>
 </body>
 
